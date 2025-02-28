@@ -1,0 +1,46 @@
+type|footnote|line_item|2005|2006|2007|2008
+Revenues|1|Sales and Use Tax|1699636|1915600|2109732|2031239
+Revenues|1|Individual Income Tax|1946593|2324365|2589252|2560394
+Revenues|1|Corporate Tax|209304|379624|411929|410586
+Revenues|NA|Motor and Special Fuels Tax|336417|344902|366446|357664
+Revenues|NA|Other Taxes|275715|316994|320204|333542
+Revenues|2|Federal Contracts and Grants|2366786|2524022|2480016|2574585
+Revenues|NA|Charges for Services/Royalties|330998|405013|412411|468451
+Revenues|NA|Licenses, Permits, and Fees|121382|113684|120349|121882
+Revenues|NA|Federal Mineral Lease|82704|156851|145985|134404
+Revenues|NA|Intergovernmental|4104|9109|23332|12884
+Revenues|3|Investment Income|71538|116215|240988|46716
+Revenues|NA|Miscellaneous and Other|231708|239901|261617|373047
+Revenues|NA|Total Revenues|7676885|8846280|9482261|9425394
+Expenditures|NA|General Government|178891|239838|268775|319389
+Expenditures|NA|Human Services and Juvenile Justice Services|576871|593392|627598|677234
+Expenditures|NA|Corrections|198030|205310|229198|251216
+Expenditures|NA|Public Safety|163072|179622|172427|196008
+Expenditures|NA|Courts|107807|114111|119650|131261
+Expenditures|4|Health and Environmental Quality|1461618|1634619|1620400|1648841
+Expenditures|NA|Higher Education-State Administration|39121|43505|49064|64587
+Expenditures|NA|Higher Education-Colleges and Universities|637087|675267|708063|793283
+Expenditures|5|Employment and Family Services|417037|413380|406532|432955
+Expenditures|NA|Natural Resources|123195|140592|171014|174120
+Expenditures|5|Heritage and Arts|87621|85231|108592|132413
+Expenditures|NA|Business, Labor, and Agriculture|85115|89255|91162|96072
+Expenditures|6|Public Education|2168896|2322871|2547421|2960873
+Expenditures|7 8|Transportation|797869|761744|813315|1030793
+Expenditures|9|Capital Outlay|139488|347048|560108|566955
+Expenditures|NA|Debt Service - Principal Retirement|183911|152746|159862|193292
+Expenditures|NA|Debt Service - Interest and Other Charges|89768|82690|75149|139883
+Expenditures|NA|Total Expenditures|7455397|8081221|8728330|9809175
+NA|NA|Revenues Over (Under) Expenditures|221488|765059|753931|-383781
+Other Financing Sources (Uses)|9|General Obligation Bonds Issued|140635|NA|NA|75000
+Other Financing Sources (Uses)|NA|Revenue Bonds Issued|18430|NA|NA|NA
+Other Financing Sources (Uses)|NA|Refunding Bonds Issued|22066|NA|NA|1557
+Other Financing Sources (Uses)|NA|Premium on Bonds Issued|12039|NA|NA|NA
+Other Financing Sources (Uses)|NA|Payment to Refunded Bond Escrow Agent|-23212|NA|NA|NA
+Other Financing Sources (Uses)|NA|Capital Leases/Contracts Issued|NA|NA|NA|2131
+Other Financing Sources (Uses)|NA|Sale of Capital Assets|18070|50679|47193|30824
+Other Financing Sources (Uses)|NA|Transfers In|852989|935723|3721041|4550400
+Other Financing Sources (Uses)|NA|Transfers Out|-839392|-952798|-3674615|-4512711
+Other Financing Sources (Uses)|NA|Prior Period Adjustments and Restatements|NA|942|NA|NA
+Other Financing Sources (Uses)|NA|Total Other Financing Sources (Uses)|201625|34546|93619|147201
+NA|NA|Net Change in Fund Balances|423113|799605|847550|-236580
+NA|NA|Debt Service as a Percentage of Noncapital Expenditures|3.89%|3.12%|2.96%|3.75%

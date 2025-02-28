@@ -1,0 +1,466 @@
+---
+title: "ACFR scrapping: revenues & expenses"
+output: html_document
+author: talmage anderson
+date: "2025-02-20"
+---
+
+```{r}
+library(tidyverse)
+library(plotly)
+library(scales)
+library(tidyr)
+```
+
+State of Utah: A-4 - Changes in Fund Balances
+```{r}
+A4_2024_2020 <- read_delim("C:/Users/tkanderson/Documents/ACRF - Rev vs Exp/A-4 data 2024-2020.txt", show_col_types = FALSE)
+
+A4_2019_2015 <- read_delim("C:/Users/tkanderson/Documents/ACRF - Rev vs Exp/A-4 data 2019-2015.txt", show_col_types = FALSE)
+
+print(colnames(A4_2024_2020))  # Print the column names
+print(colnames(A4_2019_2015)) 
+```
+
+```{r}
+## Append on the 5 years to get all 10 years together
+
+# Extract the 5-year columns from A4_2019_2015
+cols_to_extract <- c("2019", "2018", "2017", "2016", "2015")
+
+A4_2019_2015_subset <- A4_2019_2015[, cols_to_extract]
+
+
+joint_data <- cbind(A4_2024_2020, A4_2019_2015_subset) %>% 
+  rename(type = Type,
+         footnote = Footnote,
+         line_item = `Line Item`)
+
+
+# store Debt Service as a Percentage of Noncapital Expenditures as separate object
+debt_service_percentage <- joint_data %>% filter(line_item =="Debt Service as a Percentage of Noncapital Expenditures")
+
+# drop Debt Service before multiplying by 1000s
+joint_data <- joint_data %>% filter(!line_item =="Debt Service as a Percentage of Noncapital Expenditures")
+```
+
+```{r}
+# convert to thousands x1000 -- PDF is dollars expressed in thousands
+# reg exp to clean and multiple by a thousand
+
+cols_to_change <- c("2024", "2023", "2022", "2021", "2020","2019", "2018", "2017", "2016", "2015")
+
+# sapply(joint_data, is.numeric)
+
+# Loop through the columns and apply the changes
+for (col in cols_to_change) {
+  # Check if the column exists in the data frame before trying to change it
+  if (col %in% names(joint_data)) {
+
+    # Convert the column to numeric.  Then multiply by 1,000
+    joint_data[[col]] <- as.numeric(joint_data[[col]])
+    joint_data[[col]] <- joint_data[[col]] * 1000
+  }
+}
+```
+```{r}
+# Pivot longer
+
+joint_data_long <- joint_data %>%
+  pivot_longer(
+    cols = c("2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015"),
+    names_to = "year",
+    values_to = "amount")
+```
+
+## EDA
+Use sum checks on type to ensure data is correct
+```{r}
+# Revenues
+joint_data_long %>% filter(line_item == "Total Revenues") %>%
+  summarize(total_10 = sum(amount))
+
+joint_data_long %>% filter(type == "Revenues") %>% 
+  filter(!line_item == "Total Revenues") %>% 
+  summarize(total = sum(amount, na.rm = TRUE))
+
+
+# Looking at Exp
+total_expenditures <- joint_data_long %>%
+  filter(line_item == "Total Expenditures") %>%
+  summarize(total_10 = sum(amount))
+
+total_expenditures_filtered <- joint_data_long %>% 
+  filter(type == "Expenditures") %>% 
+  filter(!line_item == "Total Expenditures") %>% 
+  summarize(total = sum(amount, na.rm = TRUE))
+
+# Conditional test for equality
+tolerance <- 1e-6  # Adjust tolerance as needed
+
+if (abs(total_expenditures - total_expenditures_filtered) < tolerance) {
+  print("The line item exp equal the total exp over the 10 years.")
+} else {
+  print("The two calculations yield different results.")
+  cat("Total Expenditures (Line Item):", total_expenditures, "\n")
+  cat("Total Expenditures (Filtered):", total_expenditures_filtered, "\n")
+}
+```
+
+### Start with Revenues
+```{r}
+# Filter for only revenue data
+revenue_data <- joint_data_long %>%  filter(type == "Revenues")
+
+total_rev <- revenue_data %>% filter(line_item == "Total Revenues")
+
+
+plot2 <- ggplot(total_rev, aes(x = year, y = amount)) +
+  geom_line(aes(group = 1), color = "black") +
+  geom_point(color = "black") +
+  labs(title = "Total Revenue Over the Last 10 Years",
+       x = "Year",
+       y = "Billions of $") +
+  theme_minimal() +
+  scale_y_continuous(labels = function(x) x/1e9)
+ggplotly(plot2)
+```
+
+```{r}
+sales_data <- revenue_data %>% filter(line_item == "Sales and Use Tax") %>% 
+  group_by(line_item)
+
+ggplot(sales_data, aes(x = year, y = amount)) +
+  geom_line(aes(group = 1), color = "blue", linewidth = 1.2) +
+  geom_point(color = "red", size = 3) +
+  labs(title = "Sales and Use Tax Over the Last 10 Years",
+       x = "Year",
+       y = "Billions of $") +
+  theme_minimal() +
+  scale_y_continuous(labels = function(x) x/1e9)
+
+income_data <- revenue_data %>% filter(line_item == "Individual Income Tax") %>% 
+  group_by(line_item)
+
+plot2 <- ggplot(income_data, aes(x = year, y = amount)) +
+  geom_line(aes(group = 1), color = "green", linewidth = 1.2) +
+  geom_point(color = "green", size = 3) +
+  labs(title = "'Individual Income Tax' Over the Last 10 Years",
+       x = "Year",
+       y = "Billions of $") +
+  theme_minimal() +
+  scale_y_continuous(labels = function(x) x/1e9)
+ggplotly(plot2)
+
+federal_rev_data <- revenue_data %>% filter(line_item == "Federal Contracts and Grants") 
+
+plot3 <- ggplot(federal_rev_data, aes(x = year, y = amount)) +
+  geom_line(aes(group = 1), color = "purple") +
+  geom_point(color = "purple") +
+  labs(title = "'Individual Income Tax' Over the Last 10 Years",
+       x = "Year",
+       y = "Billions of $") +
+  theme_minimal() +
+  scale_y_continuous(labels = function(x) x/1e9)
+ggplotly(plot3)
+```
+
+### Combined Line Plots
+```{r}
+# Combine the data for the three line items
+combined_data <- revenue_data %>%
+  filter(line_item %in% c("Sales and Use Tax", "Individual Income Tax", "Federal Contracts and Grants"))
+
+ggplot(combined_data, aes(x = year, y = amount, color = line_item, group = line_item)) +
+  geom_line(linewidth = 1.2) + # Increased line thickness
+  scale_y_continuous(labels = function(x) x / 1e9,  # Divide by 1 billion
+                     breaks = pretty_breaks(n = 8)) + # Custom breaks for clearer labels
+  labs(title = "Revenue Over Time",
+       x = "Year",
+       y = "Billions of $",
+       color = "Line Items") +
+  theme_minimal()
+```
+```{r}
+combined_data2 <- revenue_data %>%
+  filter(line_item %in% c("Charges for Services/Royalties","Corporate Tax", "Miscellaneous and Other","Motor and Special Fuel Taxes","Other Taxes","Licenses, Permits, and Fees","Federal Mineral Lease"))
+
+# Investment Income goes negative! Intergovernmental goes to zero last few years
+
+ggplot(combined_data2, aes(x = year, y = amount, color = line_item, group = line_item)) +
+  geom_line(linewidth = 1.2) + # Increased line thickness
+  scale_y_continuous(labels = function(x) x / 1e9,  # Divide by 1 billion
+                     breaks = pretty_breaks(n = 8)) +
+  labs(title = "Revenue Over Time",
+       x = "Year",
+       y = "Billions of $",
+       color = "Line Items") +
+  theme_minimal()
+```
+
+## Bar Chart for Revenues
+```{r}
+bar_plot <- ggplot(combined_data, aes(x = year, y = amount, fill = line_item)) +
+  geom_bar(stat = "identity", position = "dodge") + #  'dodge' position puts bars side by side
+  labs(title = "Revenue by Source",
+       x = "Year",
+       y = "Billions of $",
+       fill = "Line Items") +
+  theme_minimal() + 
+  scale_fill_brewer(palette = "Set1") +
+  scale_y_continuous(labels = function(x) x / 1e9,  # Divide by 1 billion
+                     breaks = pretty_breaks(n = 8)) +
+  aes(text = paste0("Year: ", year, "<br>",
+                     "Line Item: ", line_item, "<br>",
+                     "Amount: $", format(amount/1e9, digits = 3, big.mark = ",", scientific = FALSE), " Billion")) # Add text for hover
+
+ggplotly(bar_plot, tooltip = "text")
+```
+
+## Stacked Bar Chart
+```{r}
+# 1. Calculate total revenue for each Line Item
+line_item_totals <- revenue_data %>%
+  group_by(line_item) %>%
+  summarize(Total_Revenue = sum(amount, na.rm =  TRUE)) %>%
+  arrange(Total_Revenue)
+
+# 2. Identify Top Line Items based on Total Revenue
+top_5_line_items <- line_item_totals %>%
+  slice(8:12) %>% 
+  pull(line_item)
+
+# 3. Filter the data
+revenue_data_top5 <- revenue_data %>%
+  filter(line_item %in% top_5_line_items)
+
+
+# stacked bar chart
+ggplot(revenue_data_top5, aes(x = year, y = amount, fill = line_item)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(title = "Revenues by Line Item",
+       x = NULL,
+       y = "Revenue",
+       fill = "Line Item") +
+  theme_minimal() +   # Minimal theme for cleaner look
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_fill_brewer(palette = "Pastel1")
+
+
+ggplot(revenue_data_top5, aes(x = year, y = amount, fill = line_item)) +
+  geom_bar(stat = "identity", position = "stack") +
+  labs(title = " ",
+       x = "Year",
+       y = "Revenue (Billions of $)",
+       fill = "Line Item") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        plot.title = element_text(hjust = 0.5)) +
+  scale_y_continuous(labels = function(x) x/1e9)
+```
+
+### Percent change – Sales Tax
+```{r}
+# calculate some percentage changes by rev categories
+
+sales_data <- revenue_data %>% filter(line_item == "Sales and Use Tax") %>% 
+  janitor::clean_names() %>% 
+  group_by(line_item) %>% 
+  arrange(desc(year)) %>%
+  mutate(
+    previous_year_amount = lag(amount, default = first(amount)), # can change for 1st line to be NAs
+    percentage_change = ((previous_year_amount - amount)/previous_year_amount)*100
+  ) %>%
+  ungroup()
+
+sales_data$year <- as.numeric(sales_data$year)
+
+
+sales_data_perc <- sales_data %>%
+  mutate(percentage_change = sprintf("%.2f%%", percentage_change)) %>% 
+  select(year, amount, percentage_change)
+
+print(sales_data_perc)
+
+# Calculate 5-year change:
+percentage_change_5year <-sales_data %>%
+  arrange(year) %>% 
+  mutate(
+    amount_lag5 = lag(amount, n = 5),
+    amount_lag5_change = amount - amount_lag5,
+    amount_lag5_change_perc = (amount - amount_lag5) / amount_lag5) %>%
+    select(year, amount, amount_lag5_change, amount_lag5_change_perc)
+
+print(percentage_change_5year)
+
+# Calculate 10-year change:
+percentage_change_10year <- sales_data %>%
+  arrange(year) %>% 
+  mutate(
+    amount_lag10 = lag(amount, n = 9),
+    amount_lag10_change = amount - amount_lag10,
+    amount_lag10_change_perc = (amount - amount_lag10) / amount_lag10) %>%
+    select(year, amount, amount_lag10_change, amount_lag10_change_perc)
+
+print(percentage_change_10year)
+```
+## Percent change – Income Tax
+```{r}
+income_tax_data <- revenue_data %>% filter(line_item == "Individual Income Tax")%>% 
+  janitor::clean_names() %>% 
+  group_by(line_item) %>% 
+  arrange(desc(year)) %>%
+  mutate(
+    previous_year_amount = lag(amount, default = first(amount)), # can change for 1st line to be NAs
+    percentage_change = ((previous_year_amount - amount)/previous_year_amount)*100
+  ) %>%
+  ungroup()
+
+sales_data_perc <- income_tax_data %>%
+  mutate(percentage_change = sprintf("%.2f%%", percentage_change)) %>% 
+  select(year, amount, percentage_change)
+
+print(sales_data_perc)
+
+
+# Calculate 5-year change:
+percentage_change_5year <-income_tax_data %>%
+  arrange(year) %>% 
+  mutate(
+    amount_lag5 = lag(amount, n = 5),
+    amount_lag5_change = amount - amount_lag5,
+    amount_lag5_change_perc = (amount - amount_lag5) / amount_lag5) %>%
+    select(year, amount, amount_lag5_change, amount_lag5_change_perc)
+
+print(percentage_change_5year)
+
+# Calculate 10-year change:
+percentage_change_10year <- income_tax_data %>%
+  arrange(year) %>% 
+  mutate(
+    amount_lag10 = lag(amount, n = 9),
+    amount_lag10_change = amount - amount_lag10,
+    amount_lag10_change_perc = (amount - amount_lag10) / amount_lag10) %>%
+    select(year, amount, amount_lag10_change, amount_lag10_change_perc)
+
+print(percentage_change_10year)
+```
+## Pie Chart for Fun
+```{r}
+pie_data <- revenue_data %>%
+  filter(year == 2024) %>%
+  filter(!line_item =="Total Revenues" & !line_item=="Intergovernmental")
+
+summary_data <- pie_data %>%
+  group_by(line_item) %>% # Replace 'subcategory' with your actual column name
+  summarise(total_revenue = sum(amount))
+
+ggplot(summary_data, aes(x = "", y = total_revenue, fill = line_item)) +
+ geom_bar(stat = "identity", width = 1) +
+ coord_polar("y", start = 0) +
+ theme_void()
+ labs(title = "Revenue Distribution, Year 2024)",
+    fill = "Line Items")
+```
+
+
+### Looking at Expenses
+```{r}
+expense_data <- joint_data_long %>% filter(type == "Expenditures") %>% 
+  arrange(desc(amount))
+
+expense_data <- expense_data %>%
+  mutate(line_item = str_replace_all(line_item, 
+                                      pattern="Health and Human Services", 
+                                      replacement="Health and Environmental Quality"))%>%
+  filter(!is.na(amount))
+
+line_item_exp <- expense_data %>%
+  group_by(line_item) %>%
+  summarize(Total_Exp = sum(amount, na.rm =  TRUE)) %>%
+  arrange(desc(Total_Exp))
+
+print(line_item_exp)
+```
+
+```{r}
+# Combine the data for the three line items
+exp_combined_data <- expense_data  %>%
+  filter(line_item %in% c("Public Education", "Health and Environmental Quality", "Higher Education-Colleges and Universities","Transportation"))
+
+ggplot(exp_combined_data, aes(x = year, y = amount, color = line_item, group = line_item)) +
+  geom_line(linewidth = 1.2) + # Increased line thickness
+  scale_y_continuous(labels = function(x) x / 1e9,  # Divide by 1 billion
+                     breaks = pretty_breaks(n = 8)) + # Custom breaks for clearer labels
+  labs(title = "Expenditure Over Time",
+       x = "Year",
+       y = "Billions of $",
+       color = "Line Items") +
+  theme_minimal()
+
+# look at other high groups
+exp_combined_data2 <- expense_data  %>%
+  filter(line_item %in% c("Employment and Family Services", "Capital Outlay", "General Government","Human Services and Juvenile Justice Services","Public Safety"))
+
+ggplot(exp_combined_data2, aes(x = year, y = amount, color = line_item, group = line_item)) +
+  geom_line(linewidth = 1.2) +
+  scale_y_continuous(labels = function(x) x / 1e9,
+                     breaks = pretty_breaks(n = 8)) +
+  labs(title = "Expenditure Over Time",
+       x = "Year",
+       y = "Billions of $",
+       color = "Line Items") +
+  theme_minimal()
+
+
+# look at other 10 smaller groups
+exp_combined_data3 <- expense_data  %>%
+  filter(line_item %in% c("Corrections", "Debt Service - Principal Retirement","Natural Resources","Courts","Business, Labor, and Agriculture","Debt Service - Interest and Other Charges","Higher Education-State Administration
+","Cultural and Community Engagement","Environmental Quality"))
+
+ggplot(exp_combined_data3, aes(x = year, y = amount, color = line_item, group = line_item)) +
+  geom_line(linewidth = 1.2) +
+  scale_y_continuous(labels = function(x) x / 1e9,
+                     breaks = pretty_breaks(n = 8)) +
+  labs(title = "Expenditure Over Time",
+       x = "Year",
+       y = "Billions of $",
+       color = "Line Items") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Accent")
+```
+
+## Other Financing Sources
+```{r}
+
+```
+
+## Special Items
+```{r}
+years <- c("2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015")
+debt_service_percentage_str <- c("1.95%", "2.31%", "2.55%", "2.63%", "3.22%", "2.74%", "3.18%", "3.78%", "4.17%", "4.22%")
+
+debt_service_percentage <- as.numeric(gsub("%", "", debt_service_percentage_str)) / 100  # Remove % and divide by 100
+
+# Create a data frame
+data <- data.frame(Year = years, DebtServicePercentage = debt_service_percentage)
+
+# Ensure Year is treated as a factor (categorical)
+data$Year <- factor(data$Year, levels = years)
+
+# Create the line plot using ggplot2
+ggplot(data, aes(x = Year, y = DebtServicePercentage, group = 1)) +  # group = 1 is crucial for line plot with discrete x
+  geom_line() +
+  geom_point() +
+  labs(title = "Debt Service Percentage Over Time",
+       x = " ",
+       y = " ") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::percent)
+```
+
+
+
+
+

@@ -1,0 +1,881 @@
+"","line_item","type","footnote","year","amount"
+"1","Charges for Services/Royalties","Revenues",NA,"2024",1621890000
+"2","Charges for Services/Royalties","Revenues",NA,"2023",1379743000
+"3","Charges for Services/Royalties","Revenues",NA,"2022",1231608000
+"4","Charges for Services/Royalties","Revenues",NA,"2021",1112837000
+"5","Charges for Services/Royalties","Revenues",NA,"2020",859452000
+"6","Charges for Services/Royalties","Revenues",NA,"2019",780790000
+"7","Charges for Services/Royalties","Revenues",NA,"2018",740282000
+"8","Charges for Services/Royalties","Revenues",NA,"2017",667665000
+"9","Charges for Services/Royalties","Revenues",NA,"2016",630300000
+"10","Charges for Services/Royalties","Revenues",NA,"2015",682288000
+"11","Charges for Services/Royalties","Revenues",NA,"2014",706125000
+"12","Charges for Services/Royalties","Revenues",NA,"2013",677119000
+"13","Charges for Services/Royalties","Revenues",NA,"2012",625831000
+"14","Charges for Services/Royalties","Revenues",NA,"2011",528568000
+"15","Charges for Services/Royalties","Revenues",NA,"2010",463436000
+"16","Charges for Services/Royalties","Revenues",NA,"2009",463248000
+"17","Charges for Services/Royalties","Revenues",NA,"2008",468451000
+"18","Charges for Services/Royalties","Revenues",NA,"2007",412411000
+"19","Charges for Services/Royalties","Revenues",NA,"2006",405013000
+"20","Charges for Services/Royalties","Revenues",NA,"2005",330998000
+"21","Corporate Tax","Revenues",1,"2024",902927000
+"22","Corporate Tax","Revenues",1,"2023",894682000
+"23","Corporate Tax","Revenues",1,"2022",960035000
+"24","Corporate Tax","Revenues",1,"2021",687791000
+"25","Corporate Tax","Revenues",1,"2020",405632000
+"26","Corporate Tax","Revenues",1,"2019",534977000
+"27","Corporate Tax","Revenues",1,"2018",423019000
+"28","Corporate Tax","Revenues",1,"2017",325701000
+"29","Corporate Tax","Revenues",1,"2016",354615000
+"30","Corporate Tax","Revenues",1,"2015",366543000
+"31","Corporate Tax","Revenues",1,"2014",322748000
+"32","Corporate Tax","Revenues",1,"2013",329726000
+"33","Corporate Tax","Revenues",1,"2012",285541000
+"34","Corporate Tax","Revenues",1,"2011",230888000
+"35","Corporate Tax","Revenues",1,"2010",266961000
+"36","Corporate Tax","Revenues",1,"2009",249177000
+"37","Corporate Tax","Revenues",1,"2008",410586000
+"38","Corporate Tax","Revenues",1,"2007",411929000
+"39","Corporate Tax","Revenues",1,"2006",379624000
+"40","Corporate Tax","Revenues",1,"2005",209304000
+"41","Federal Contracts and Grants","Revenues",4,"2024",6859413000
+"42","Federal Contracts and Grants","Revenues",4,"2023",7291203000
+"43","Federal Contracts and Grants","Revenues",4,"2022",7366055000
+"44","Federal Contracts and Grants","Revenues",4,"2021",6223486000
+"45","Federal Contracts and Grants","Revenues",4,"2020",4648234000
+"46","Federal Contracts and Grants","Revenues",4,"2019",3973026000
+"47","Federal Contracts and Grants","Revenues",4,"2018",3893654000
+"48","Federal Contracts and Grants","Revenues",4,"2017",3828715000
+"49","Federal Contracts and Grants","Revenues",4,"2016",3573699000
+"50","Federal Contracts and Grants","Revenues",4,"2015",3478563000
+"51","Federal Contracts and Grants","Revenues",4,"2014",3463045000
+"52","Federal Contracts and Grants","Revenues",4,"2013",3489515000
+"53","Federal Contracts and Grants","Revenues",4,"2012",3561512000
+"54","Federal Contracts and Grants","Revenues",4,"2011",3626354000
+"55","Federal Contracts and Grants","Revenues",4,"2010",3713771000
+"56","Federal Contracts and Grants","Revenues",4,"2009",3207110000
+"57","Federal Contracts and Grants","Revenues",4,"2008",2574585000
+"58","Federal Contracts and Grants","Revenues",4,"2007",2480016000
+"59","Federal Contracts and Grants","Revenues",4,"2006",2524022000
+"60","Federal Contracts and Grants","Revenues",4,"2005",2366786000
+"61","Federal Mineral Lease","Revenues",5,"2024",84283000
+"62","Federal Mineral Lease","Revenues",5,"2023",137559000
+"63","Federal Mineral Lease","Revenues",5,"2022",75616000
+"64","Federal Mineral Lease","Revenues",5,"2021",49039000
+"65","Federal Mineral Lease","Revenues",5,"2020",58606000
+"66","Federal Mineral Lease","Revenues",5,"2019",77607000
+"67","Federal Mineral Lease","Revenues",5,"2018",76693000
+"68","Federal Mineral Lease","Revenues",5,"2017",73787000
+"69","Federal Mineral Lease","Revenues",5,"2016",69245000
+"70","Federal Mineral Lease","Revenues",5,"2015",138635000
+"71","Federal Mineral Lease","Revenues",5,"2014",158193000
+"72","Federal Mineral Lease","Revenues",5,"2013",138122000
+"73","Federal Mineral Lease","Revenues",5,"2012",183739000
+"74","Federal Mineral Lease","Revenues",5,"2011",135979000
+"75","Federal Mineral Lease","Revenues",5,"2010",129377000
+"76","Federal Mineral Lease","Revenues",5,"2009",172642000
+"77","Federal Mineral Lease","Revenues",5,"2008",134884000
+"78","Federal Mineral Lease","Revenues",5,"2007",145985000
+"79","Federal Mineral Lease","Revenues",5,"2006",156851000
+"80","Federal Mineral Lease","Revenues",5,"2005",82704000
+"81","Individual Income Tax","Revenues",1,"2024",6243189000
+"82","Individual Income Tax","Revenues",1,"2023",6510385000
+"83","Individual Income Tax","Revenues",1,"2022",6814382000
+"84","Individual Income Tax","Revenues",1,"2021",5451297000
+"85","Individual Income Tax","Revenues",1,"2020",4758082000
+"86","Individual Income Tax","Revenues",1,"2019",4336437000
+"87","Individual Income Tax","Revenues",1,"2018",4033320000
+"88","Individual Income Tax","Revenues",1,"2017",3646112000
+"89","Individual Income Tax","Revenues",1,"2016",3393087000
+"90","Individual Income Tax","Revenues",1,"2015",3211476000
+"91","Individual Income Tax","Revenues",1,"2014",2916015000
+"92","Individual Income Tax","Revenues",1,"2013",2865195000
+"93","Individual Income Tax","Revenues",1,"2012",2518373000
+"94","Individual Income Tax","Revenues",1,"2011",2332562000
+"95","Individual Income Tax","Revenues",1,"2010",2124173000
+"96","Individual Income Tax","Revenues",1,"2009",2340400000
+"97","Individual Income Tax","Revenues",1,"2008",2560394000
+"98","Individual Income Tax","Revenues",1,"2007",2589252000
+"99","Individual Income Tax","Revenues",1,"2006",2324365000
+"100","Individual Income Tax","Revenues",1,"2005",1946593000
+"101","Intergovernmental","Revenues",NA,"2024",NA
+"102","Intergovernmental","Revenues",NA,"2023",NA
+"103","Intergovernmental","Revenues",NA,"2022",NA
+"104","Intergovernmental","Revenues",NA,"2021",NA
+"105","Intergovernmental","Revenues",NA,"2020",8057000
+"106","Intergovernmental","Revenues",NA,"2019",16029000
+"107","Intergovernmental","Revenues",NA,"2018",11801000
+"108","Intergovernmental","Revenues",NA,"2017",19273000
+"109","Intergovernmental","Revenues",NA,"2016",11264000
+"110","Intergovernmental","Revenues",NA,"2015",12620000
+"111","Intergovernmental","Revenues",NA,"2014",7211000
+"112","Intergovernmental","Revenues",NA,"2013",32704000
+"113","Intergovernmental","Revenues",NA,"2012",34407000
+"114","Intergovernmental","Revenues",NA,"2011",18537000
+"115","Intergovernmental","Revenues",NA,"2010",28659000
+"116","Intergovernmental","Revenues",NA,"2009",9446000
+"117","Intergovernmental","Revenues",NA,"2008",12884000
+"118","Intergovernmental","Revenues",NA,"2007",23332000
+"119","Intergovernmental","Revenues",NA,"2006",9109000
+"120","Intergovernmental","Revenues",NA,"2005",4104000
+"121","Investment Income","Revenues",6,"2024",1111683000
+"122","Investment Income","Revenues",6,"2023",662850000
+"123","Investment Income","Revenues",6,"2022",-177324000
+"124","Investment Income","Revenues",6,"2021",756946000
+"125","Investment Income","Revenues",6,"2020",-13567000
+"126","Investment Income","Revenues",6,"2019",218077000
+"127","Investment Income","Revenues",6,"2018",198082000
+"128","Investment Income","Revenues",6,"2017",266775000
+"129","Investment Income","Revenues",6,"2016",34168000
+"130","Investment Income","Revenues",6,"2015",133092000
+"131","Investment Income","Revenues",6,"2014",353653000
+"132","Investment Income","Revenues",6,"2013",221139000
+"133","Investment Income","Revenues",6,"2012",46133000
+"134","Investment Income","Revenues",6,"2011",274797000
+"135","Investment Income","Revenues",6,"2010",118541000
+"136","Investment Income","Revenues",6,"2009",-132523000
+"137","Investment Income","Revenues",6,"2008",46716000
+"138","Investment Income","Revenues",6,"2007",240988000
+"139","Investment Income","Revenues",6,"2006",116215000
+"140","Investment Income","Revenues",6,"2005",71538000
+"141","Licenses, Permits, and Fees","Revenues",NA,"2024",299816000
+"142","Licenses, Permits, and Fees","Revenues",NA,"2023",262371000
+"143","Licenses, Permits, and Fees","Revenues",NA,"2022",246782000
+"144","Licenses, Permits, and Fees","Revenues",NA,"2021",237702000
+"145","Licenses, Permits, and Fees","Revenues",NA,"2020",225258000
+"146","Licenses, Permits, and Fees","Revenues",NA,"2019",219972000
+"147","Licenses, Permits, and Fees","Revenues",NA,"2018",211045000
+"148","Licenses, Permits, and Fees","Revenues",NA,"2017",203830000
+"149","Licenses, Permits, and Fees","Revenues",NA,"2016",199748000
+"150","Licenses, Permits, and Fees","Revenues",NA,"2015",194648000
+"151","Licenses, Permits, and Fees","Revenues",NA,"2014",188653000
+"152","Licenses, Permits, and Fees","Revenues",NA,"2013",185976000
+"153","Licenses, Permits, and Fees","Revenues",NA,"2012",183630000
+"154","Licenses, Permits, and Fees","Revenues",NA,"2011",188998000
+"155","Licenses, Permits, and Fees","Revenues",NA,"2010",179947000
+"156","Licenses, Permits, and Fees","Revenues",NA,"2009",128212000
+"157","Licenses, Permits, and Fees","Revenues",NA,"2008",121402000
+"158","Licenses, Permits, and Fees","Revenues",NA,"2007",120349000
+"159","Licenses, Permits, and Fees","Revenues",NA,"2006",113684000
+"160","Licenses, Permits, and Fees","Revenues",NA,"2005",121382000
+"161","Miscellaneous and Other","Revenues",7,"2024",814225000
+"162","Miscellaneous and Other","Revenues",7,"2023",708116000
+"163","Miscellaneous and Other","Revenues",7,"2022",762630000
+"164","Miscellaneous and Other","Revenues",7,"2021",646815000
+"165","Miscellaneous and Other","Revenues",7,"2020",560138000
+"166","Miscellaneous and Other","Revenues",7,"2019",433733000
+"167","Miscellaneous and Other","Revenues",7,"2018",448431000
+"168","Miscellaneous and Other","Revenues",7,"2017",394167000
+"169","Miscellaneous and Other","Revenues",7,"2016",388295000
+"170","Miscellaneous and Other","Revenues",7,"2015",384968000
+"171","Miscellaneous and Other","Revenues",7,"2014",327880000
+"172","Miscellaneous and Other","Revenues",7,"2013",305267000
+"173","Miscellaneous and Other","Revenues",7,"2012",393010000
+"174","Miscellaneous and Other","Revenues",7,"2011",332722000
+"175","Miscellaneous and Other","Revenues",7,"2010",356004000
+"176","Miscellaneous and Other","Revenues",7,"2009",382614000
+"177","Miscellaneous and Other","Revenues",7,"2008",373047000
+"178","Miscellaneous and Other","Revenues",7,"2007",261617000
+"179","Miscellaneous and Other","Revenues",7,"2006",239901000
+"180","Miscellaneous and Other","Revenues",7,"2005",231708000
+"181","Motor and Special Fuel Taxes","Revenues",2,"2024",639781000
+"182","Motor and Special Fuel Taxes","Revenues",2,"2023",608170000
+"183","Motor and Special Fuel Taxes","Revenues",2,"2022",577407000
+"184","Motor and Special Fuel Taxes","Revenues",2,"2021",560763000
+"185","Motor and Special Fuel Taxes","Revenues",2,"2020",498402000
+"186","Motor and Special Fuel Taxes","Revenues",2,"2019",521199000
+"187","Motor and Special Fuel Taxes","Revenues",2,"2018",500049000
+"188","Motor and Special Fuel Taxes","Revenues",2,"2017",484677000
+"189","Motor and Special Fuel Taxes","Revenues",2,"2016",425343000
+"190","Motor and Special Fuel Taxes","Revenues",2,"2015",371412000
+"191","Motor and Special Fuel Taxes","Revenues",2,"2014",359176000
+"192","Motor and Special Fuel Taxes","Revenues",2,"2013",351197000
+"193","Motor and Special Fuel Taxes","Revenues",2,"2012",353299000
+"194","Motor and Special Fuel Taxes","Revenues",2,"2011",352918000
+"195","Motor and Special Fuel Taxes","Revenues",2,"2010",341196000
+"196","Motor and Special Fuel Taxes","Revenues",2,"2009",337529000
+"197","Motor and Special Fuel Taxes","Revenues",2,"2008",357664000
+"198","Motor and Special Fuel Taxes","Revenues",2,"2007",366446000
+"199","Motor and Special Fuel Taxes","Revenues",2,"2006",344902000
+"200","Motor and Special Fuel Taxes","Revenues",2,"2005",336417000
+"201","Other Taxes","Revenues",3,"2024",565244000
+"202","Other Taxes","Revenues",3,"2023",578815000
+"203","Other Taxes","Revenues",3,"2022",535139000
+"204","Other Taxes","Revenues",3,"2021",439311000
+"205","Other Taxes","Revenues",3,"2020",425482000
+"206","Other Taxes","Revenues",3,"2019",398684000
+"207","Other Taxes","Revenues",3,"2018",399286000
+"208","Other Taxes","Revenues",3,"2017",354863000
+"209","Other Taxes","Revenues",3,"2016",355229000
+"210","Other Taxes","Revenues",3,"2015",386066000
+"211","Other Taxes","Revenues",3,"2014",432178000
+"212","Other Taxes","Revenues",3,"2013",400111000
+"213","Other Taxes","Revenues",3,"2012",414744000
+"214","Other Taxes","Revenues",3,"2011",397248000
+"215","Other Taxes","Revenues",3,"2010",328753000
+"216","Other Taxes","Revenues",3,"2009",354713000
+"217","Other Taxes","Revenues",3,"2008",333542000
+"218","Other Taxes","Revenues",3,"2007",320204000
+"219","Other Taxes","Revenues",3,"2006",316994000
+"220","Other Taxes","Revenues",3,"2005",275715000
+"221","Sales and Use Tax","Revenues",1,"2024",4527203000
+"222","Sales and Use Tax","Revenues",1,"2023",4417783000
+"223","Sales and Use Tax","Revenues",1,"2022",4201118000
+"224","Sales and Use Tax","Revenues",1,"2021",3569706000
+"225","Sales and Use Tax","Revenues",1,"2020",3068002000
+"226","Sales and Use Tax","Revenues",1,"2019",2805618000
+"227","Sales and Use Tax","Revenues",1,"2018",2646996000
+"228","Sales and Use Tax","Revenues",1,"2017",2403347000
+"229","Sales and Use Tax","Revenues",1,"2016",2302886000
+"230","Sales and Use Tax","Revenues",1,"2015",2204389000
+"231","Sales and Use Tax","Revenues",1,"2014",2121249000
+"232","Sales and Use Tax","Revenues",1,"2013",2094132000
+"233","Sales and Use Tax","Revenues",1,"2012",1934035000
+"234","Sales and Use Tax","Revenues",1,"2011",1812011000
+"235","Sales and Use Tax","Revenues",1,"2010",1733412000
+"236","Sales and Use Tax","Revenues",1,"2009",1761224000
+"237","Sales and Use Tax","Revenues",1,"2008",2031239000
+"238","Sales and Use Tax","Revenues",1,"2007",2109732000
+"239","Sales and Use Tax","Revenues",1,"2006",1915600000
+"240","Sales and Use Tax","Revenues",1,"2005",1699636000
+"241","Total Revenues","Revenues",NA,"2024",23669654000
+"242","Total Revenues","Revenues",NA,"2023",23451677000
+"243","Total Revenues","Revenues",NA,"2022",22593448000
+"244","Total Revenues","Revenues",NA,"2021",19735693000
+"245","Total Revenues","Revenues",NA,"2020",15501778000
+"246","Total Revenues","Revenues",NA,"2019",14316149000
+"247","Total Revenues","Revenues",NA,"2018",13582658000
+"248","Total Revenues","Revenues",NA,"2017",12668912000
+"249","Total Revenues","Revenues",NA,"2016",11737879000
+"250","Total Revenues","Revenues",NA,"2015",11564700000
+"251","Total Revenues","Revenues",NA,"2014",11356126000
+"252","Total Revenues","Revenues",NA,"2013",11090203000
+"253","Total Revenues","Revenues",NA,"2012",10534254000
+"254","Total Revenues","Revenues",NA,"2011",10231582000
+"255","Total Revenues","Revenues",NA,"2010",9784230000
+"256","Total Revenues","Revenues",NA,"2009",9273792000
+"257","Total Revenues","Revenues",NA,"2008",9425394000
+"258","Total Revenues","Revenues",NA,"2007",9482261000
+"259","Total Revenues","Revenues",NA,"2006",8846280000
+"260","Total Revenues","Revenues",NA,"2005",7676885000
+"261","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2024",NA
+"262","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2023",NA
+"263","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2022",NA
+"264","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2021",NA
+"265","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2020",895745000
+"266","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2019",127715000
+"267","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2018",485225000
+"268","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2017",NA
+"269","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2016",NA
+"270","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2015",NA
+"271","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2014",226175000
+"272","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2013",33240000
+"273","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2012",609920000
+"274","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2011",1034970000
+"275","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2010",982170000
+"276","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2009",498810000
+"277","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2008",7.5e+07
+"278","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2007",NA
+"279","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2006",NA
+"280","General Obligation Bonds Issued","Other Financing Sources (Uses)",16,"2005",140635000
+"281","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2024",38853000
+"282","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2023",10488000
+"283","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2022",3366000
+"284","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2021",NA
+"285","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2020",NA
+"286","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2019",NA
+"287","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2018",13705000
+"288","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2017",NA
+"289","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2016",5100000
+"290","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2015",NA
+"291","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2014",NA
+"292","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2013",2824000
+"293","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2012",NA
+"294","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2011",NA
+"295","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2010",11122000
+"296","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2009",2010000
+"297","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2008",2131000
+"298","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2007",NA
+"299","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2006",NA
+"300","Leases/Contracts Issued","Other Financing Sources (Uses)",NA,"2005",NA
+"301","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2024",NA
+"302","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2023",NA
+"303","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2022",NA
+"304","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2021",NA
+"305","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2020",NA
+"306","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2019",NA
+"307","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2018",NA
+"308","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2017",NA
+"309","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2016",NA
+"310","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2015",NA
+"311","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2014",NA
+"312","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2013",-24358000
+"313","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2012",NA
+"314","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2011",-234873000
+"315","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2010",NA
+"316","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2009",NA
+"317","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2008",NA
+"318","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2007",NA
+"319","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2006",NA
+"320","Payment to Refunded Bond Escrow Agent","Other Financing Sources (Uses)",NA,"2005",-23212000
+"321","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2024",NA
+"322","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2023",NA
+"323","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2022",NA
+"324","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2021",NA
+"325","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2020",173585000
+"326","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2019",23308000
+"327","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2018",71360000
+"328","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2017",NA
+"329","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2016",4405000
+"330","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2015",47562000
+"331","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2014",24656000
+"332","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2013",8346000
+"333","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2012",92558000
+"334","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2011",94689000
+"335","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2010",65853000
+"336","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2009",45445000
+"337","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2008",1557000
+"338","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2007",NA
+"339","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2006",NA
+"340","Premium on Bonds Issued","Other Financing Sources (Uses)",NA,"2005",12039000
+"341","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2024",NA
+"342","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2023",NA
+"343","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2022",NA
+"344","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2021",NA
+"345","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2020",NA
+"346","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2019",NA
+"347","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2018",144610000
+"348","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2017",NA
+"349","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2016",NA
+"350","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2015",221765000
+"351","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2014",NA
+"352","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2013",22612000
+"353","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2012",NA
+"354","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2011",196610000
+"355","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2010",NA
+"356","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2009",NA
+"357","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2008",NA
+"358","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2007",NA
+"359","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2006",NA
+"360","Refunding Bonds Issued","Other Financing Sources (Uses)",NA,"2005",22066000
+"361","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2024",NA
+"362","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2023",NA
+"363","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2022",NA
+"364","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2021",NA
+"365","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2020",NA
+"366","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2019",NA
+"367","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2018",2920000
+"368","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2017",NA
+"369","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2016",93625000
+"370","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2015",NA
+"371","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2014",NA
+"372","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2013",1900000
+"373","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2012",5250000
+"374","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2011",NA
+"375","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2010",101595000
+"376","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2009",NA
+"377","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2008",NA
+"378","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2007",NA
+"379","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2006",NA
+"380","Revenue Bonds Issued","Other Financing Sources (Uses)",NA,"2005",18430000
+"381","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2024",76615000
+"382","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2023",67245000
+"383","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2022",134358000
+"384","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2021",78690000
+"385","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2020",58756000
+"386","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2019",65331000
+"387","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2018",40277000
+"388","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2017",53025000
+"389","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2016",30688000
+"390","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2015",29274000
+"391","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2014",24596000
+"392","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2013",31243000
+"393","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2012",22158000
+"394","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2011",20256000
+"395","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2010",13966000
+"396","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2009",28035000
+"397","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2008",30824000
+"398","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2007",47193000
+"399","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2006",50679000
+"400","Sale of Capital Assets","Other Financing Sources (Uses)",NA,"2005",18070000
+"401","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2024",NA
+"402","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2023",NA
+"403","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2022",NA
+"404","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2021",NA
+"405","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2020",NA
+"406","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2019",329444000
+"407","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2018",719698000
+"408","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2017",188339000
+"409","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2016",255245000
+"410","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2015",158615000
+"411","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2014",319510000
+"412","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2013",152734000
+"413","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2012",774882000
+"414","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2011",1159343000
+"415","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2010",1220383000
+"416","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2009",623075000
+"417","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2008",147201000
+"418","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2007",93619000
+"419","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2006",34546000
+"420","Total Other Financing Sources (Uses)","Other Financing Sources (Uses)",NA,"2005",201625000
+"421","Transfers In","Other Financing Sources (Uses)",NA,"2024",5943254000
+"422","Transfers In","Other Financing Sources (Uses)",NA,"2023",5640288000
+"423","Transfers In","Other Financing Sources (Uses)",NA,"2022",4898297000
+"424","Transfers In","Other Financing Sources (Uses)",NA,"2021",3408383000
+"425","Transfers In","Other Financing Sources (Uses)",NA,"2020",1899963000
+"426","Transfers In","Other Financing Sources (Uses)",NA,"2019",2581581000
+"427","Transfers In","Other Financing Sources (Uses)",NA,"2018",1880116000
+"428","Transfers In","Other Financing Sources (Uses)",NA,"2017",1792074000
+"429","Transfers In","Other Financing Sources (Uses)",NA,"2016",1998019000
+"430","Transfers In","Other Financing Sources (Uses)",NA,"2015",1659616000
+"431","Transfers In","Other Financing Sources (Uses)",NA,"2014",1489272000
+"432","Transfers In","Other Financing Sources (Uses)",NA,"2013",1360691000
+"433","Transfers In","Other Financing Sources (Uses)",NA,"2012",1097387000
+"434","Transfers In","Other Financing Sources (Uses)",NA,"2011",1123598000
+"435","Transfers In","Other Financing Sources (Uses)",NA,"2010",929044000
+"436","Transfers In","Other Financing Sources (Uses)",NA,"2009",3606534000
+"437","Transfers In","Other Financing Sources (Uses)",NA,"2008",4550400000
+"438","Transfers In","Other Financing Sources (Uses)",NA,"2007",3721041000
+"439","Transfers In","Other Financing Sources (Uses)",NA,"2006",935723000
+"440","Transfers In","Other Financing Sources (Uses)",NA,"2005",852989000
+"441","Transfers Out","Other Financing Sources (Uses)",NA,"2024",-6314248000
+"442","Transfers Out","Other Financing Sources (Uses)",NA,"2023",-5656691000
+"443","Transfers Out","Other Financing Sources (Uses)",NA,"2022",-4859871000
+"444","Transfers Out","Other Financing Sources (Uses)",NA,"2021",-3259113000
+"445","Transfers Out","Other Financing Sources (Uses)",NA,"2020",-1753543000
+"446","Transfers Out","Other Financing Sources (Uses)",NA,"2019",NA
+"447","Transfers Out","Other Financing Sources (Uses)",NA,"2018",NA
+"448","Transfers Out","Other Financing Sources (Uses)",NA,"2017",NA
+"449","Transfers Out","Other Financing Sources (Uses)",NA,"2016",NA
+"450","Transfers Out","Other Financing Sources (Uses)",NA,"2015",NA
+"451","Transfers Out","Other Financing Sources (Uses)",NA,"2014",-1445189000
+"452","Transfers Out","Other Financing Sources (Uses)",NA,"2013",-1283764000
+"453","Transfers Out","Other Financing Sources (Uses)",NA,"2012",-1052391000
+"454","Transfers Out","Other Financing Sources (Uses)",NA,"2011",-1077907000
+"455","Transfers Out","Other Financing Sources (Uses)",NA,"2010",-873367000
+"456","Transfers Out","Other Financing Sources (Uses)",NA,"2009",-3557759000
+"457","Transfers Out","Other Financing Sources (Uses)",NA,"2008",-4512711000
+"458","Transfers Out","Other Financing Sources (Uses)",NA,"2007",-3674615000
+"459","Transfers Out","Other Financing Sources (Uses)",NA,"2006",-952798000
+"460","Transfers Out","Other Financing Sources (Uses)",NA,"2005",-839392000
+"461","Business, Labor, and Agriculture","Expenditures",NA,"2024",208713000
+"462","Business, Labor, and Agriculture","Expenditures",NA,"2023",164679000
+"463","Business, Labor, and Agriculture","Expenditures",NA,"2022",136921000
+"464","Business, Labor, and Agriculture","Expenditures",NA,"2021",149968000
+"465","Business, Labor, and Agriculture","Expenditures",NA,"2020",132022000
+"466","Business, Labor, and Agriculture","Expenditures",NA,"2019",119491000
+"467","Business, Labor, and Agriculture","Expenditures",NA,"2018",119158000
+"468","Business, Labor, and Agriculture","Expenditures",NA,"2017",107800000
+"469","Business, Labor, and Agriculture","Expenditures",NA,"2016",111186000
+"470","Business, Labor, and Agriculture","Expenditures",NA,"2015",101331000
+"471","Business, Labor, and Agriculture","Expenditures",NA,"2014",105915000
+"472","Business, Labor, and Agriculture","Expenditures",NA,"2013",99828000
+"473","Business, Labor, and Agriculture","Expenditures",NA,"2012",99689000
+"474","Business, Labor, and Agriculture","Expenditures",NA,"2011",93149000
+"475","Business, Labor, and Agriculture","Expenditures",NA,"2010",96579000
+"476","Business, Labor, and Agriculture","Expenditures",NA,"2009",101966000
+"477","Business, Labor, and Agriculture","Expenditures",NA,"2008",96072000
+"478","Business, Labor, and Agriculture","Expenditures",NA,"2007",91162000
+"479","Business, Labor, and Agriculture","Expenditures",NA,"2006",89255000
+"480","Business, Labor, and Agriculture","Expenditures",NA,"2005",85115000
+"481","Capital Outlay","Expenditures",15,"2024",1377974000
+"482","Capital Outlay","Expenditures",15,"2023",925911000
+"483","Capital Outlay","Expenditures",15,"2022",1117262000
+"484","Capital Outlay","Expenditures",15,"2021",1394526000
+"485","Capital Outlay","Expenditures",15,"2020",1286659000
+"486","Capital Outlay","Expenditures",15,"2019",847541000
+"487","Capital Outlay","Expenditures",15,"2018",778543000
+"488","Capital Outlay","Expenditures",15,"2017",668768000
+"489","Capital Outlay","Expenditures",15,"2016",523937000
+"490","Capital Outlay","Expenditures",15,"2015",499705000
+"491","Capital Outlay","Expenditures",15,"2014",380930000
+"492","Capital Outlay","Expenditures",15,"2013",524582000
+"493","Capital Outlay","Expenditures",15,"2012",973206000
+"494","Capital Outlay","Expenditures",15,"2011",1236168000
+"495","Capital Outlay","Expenditures",15,"2010",1007219000
+"496","Capital Outlay","Expenditures",15,"2009",607794000
+"497","Capital Outlay","Expenditures",15,"2008",566955000
+"498","Capital Outlay","Expenditures",15,"2007",560108000
+"499","Capital Outlay","Expenditures",15,"2006",347048000
+"500","Capital Outlay","Expenditures",15,"2005",139488000
+"501","Corrections","Expenditures",NA,"2024",441627000
+"502","Corrections","Expenditures",NA,"2023",430889000
+"503","Corrections","Expenditures",NA,"2022",377325000
+"504","Corrections","Expenditures",NA,"2021",341174000
+"505","Corrections","Expenditures",NA,"2020",337885000
+"506","Corrections","Expenditures",NA,"2019",328586000
+"507","Corrections","Expenditures",NA,"2018",317425000
+"508","Corrections","Expenditures",NA,"2017",305438000
+"509","Corrections","Expenditures",NA,"2016",290217000
+"510","Corrections","Expenditures",NA,"2015",272053000
+"511","Corrections","Expenditures",NA,"2014",266246000
+"512","Corrections","Expenditures",NA,"2013",251118000
+"513","Corrections","Expenditures",NA,"2012",245829000
+"514","Corrections","Expenditures",NA,"2011",238090000
+"515","Corrections","Expenditures",NA,"2010",235411000
+"516","Corrections","Expenditures",NA,"2009",255448000
+"517","Corrections","Expenditures",NA,"2008",251216000
+"518","Corrections","Expenditures",NA,"2007",229198000
+"519","Corrections","Expenditures",NA,"2006",205310000
+"520","Corrections","Expenditures",NA,"2005",198030000
+"521","Courts","Expenditures",NA,"2024",220607000
+"522","Courts","Expenditures",NA,"2023",198450000
+"523","Courts","Expenditures",NA,"2022",176715000
+"524","Courts","Expenditures",NA,"2021",162466000
+"525","Courts","Expenditures",NA,"2020",165465000
+"526","Courts","Expenditures",NA,"2019",165369000
+"527","Courts","Expenditures",NA,"2018",170233000
+"528","Courts","Expenditures",NA,"2017",152262000
+"529","Courts","Expenditures",NA,"2016",146510000
+"530","Courts","Expenditures",NA,"2015",137901000
+"531","Courts","Expenditures",NA,"2014",132886000
+"532","Courts","Expenditures",NA,"2013",129693000
+"533","Courts","Expenditures",NA,"2012",127066000
+"534","Courts","Expenditures",NA,"2011",128676000
+"535","Courts","Expenditures",NA,"2010",136373000
+"536","Courts","Expenditures",NA,"2009",129125000
+"537","Courts","Expenditures",NA,"2008",131261000
+"538","Courts","Expenditures",NA,"2007",119650000
+"539","Courts","Expenditures",NA,"2006",114111000
+"540","Courts","Expenditures",NA,"2005",107807000
+"541","Cultural and Community Engagement","Expenditures",12,"2024",79754000
+"542","Cultural and Community Engagement","Expenditures",12,"2023",75249000
+"543","Cultural and Community Engagement","Expenditures",12,"2022",59510000
+"544","Cultural and Community Engagement","Expenditures",12,"2021",67719000
+"545","Cultural and Community Engagement","Expenditures",12,"2020",41864000
+"546","Cultural and Community Engagement","Expenditures",12,"2019",31981000
+"547","Cultural and Community Engagement","Expenditures",12,"2018",30965000
+"548","Cultural and Community Engagement","Expenditures",12,"2017",29335000
+"549","Cultural and Community Engagement","Expenditures",12,"2016",27826000
+"550","Cultural and Community Engagement","Expenditures",12,"2015",24041000
+"551","Cultural and Community Engagement","Expenditures",12,"2014",NA
+"552","Cultural and Community Engagement","Expenditures",12,"2013",NA
+"553","Cultural and Community Engagement","Expenditures",12,"2012",NA
+"554","Cultural and Community Engagement","Expenditures",12,"2011",NA
+"555","Cultural and Community Engagement","Expenditures",12,"2010",NA
+"556","Cultural and Community Engagement","Expenditures",12,"2009",NA
+"557","Cultural and Community Engagement","Expenditures",12,"2008",NA
+"558","Cultural and Community Engagement","Expenditures",12,"2007",NA
+"559","Cultural and Community Engagement","Expenditures",12,"2006",NA
+"560","Cultural and Community Engagement","Expenditures",12,"2005",NA
+"561","Debt Service - Interest and Other Charges","Expenditures",NA,"2024",69969000
+"562","Debt Service - Interest and Other Charges","Expenditures",NA,"2023",85064000
+"563","Debt Service - Interest and Other Charges","Expenditures",NA,"2022",101560000
+"564","Debt Service - Interest and Other Charges","Expenditures",NA,"2021",119504000
+"565","Debt Service - Interest and Other Charges","Expenditures",NA,"2020",190114000
+"566","Debt Service - Interest and Other Charges","Expenditures",NA,"2019",103417000
+"567","Debt Service - Interest and Other Charges","Expenditures",NA,"2018",103866000
+"568","Debt Service - Interest and Other Charges","Expenditures",NA,"2017",105023000
+"569","Debt Service - Interest and Other Charges","Expenditures",NA,"2016",118805000
+"570","Debt Service - Interest and Other Charges","Expenditures",NA,"2015",135994000
+"571","Debt Service - Interest and Other Charges","Expenditures",NA,"2014",150101000
+"572","Debt Service - Interest and Other Charges","Expenditures",NA,"2013",154472000
+"573","Debt Service - Interest and Other Charges","Expenditures",NA,"2012",168047000
+"574","Debt Service - Interest and Other Charges","Expenditures",NA,"2011",142452000
+"575","Debt Service - Interest and Other Charges","Expenditures",NA,"2010",113876000
+"576","Debt Service - Interest and Other Charges","Expenditures",NA,"2009",64675000
+"577","Debt Service - Interest and Other Charges","Expenditures",NA,"2008",139883000
+"578","Debt Service - Interest and Other Charges","Expenditures",NA,"2007",75149000
+"579","Debt Service - Interest and Other Charges","Expenditures",NA,"2006",82690000
+"580","Debt Service - Interest and Other Charges","Expenditures",NA,"2005",89768000
+"581","Debt Service - Principal Retirement","Expenditures",NA,"2024",349817000
+"582","Debt Service - Principal Retirement","Expenditures",NA,"2023",368972000
+"583","Debt Service - Principal Retirement","Expenditures",NA,"2022",363067000
+"584","Debt Service - Principal Retirement","Expenditures",NA,"2021",320546000
+"585","Debt Service - Principal Retirement","Expenditures",NA,"2020",281801000
+"586","Debt Service - Principal Retirement","Expenditures",NA,"2019",260949000
+"587","Debt Service - Principal Retirement","Expenditures",NA,"2018",288051000
+"588","Debt Service - Principal Retirement","Expenditures",NA,"2017",342622000
+"589","Debt Service - Principal Retirement","Expenditures",NA,"2016",348576000
+"590","Debt Service - Principal Retirement","Expenditures",NA,"2015",319739000
+"591","Debt Service - Principal Retirement","Expenditures",NA,"2014",329659000
+"592","Debt Service - Principal Retirement","Expenditures",NA,"2013",309268000
+"593","Debt Service - Principal Retirement","Expenditures",NA,"2012",266300000
+"594","Debt Service - Principal Retirement","Expenditures",NA,"2011",223952000
+"595","Debt Service - Principal Retirement","Expenditures",NA,"2010",189041000
+"596","Debt Service - Principal Retirement","Expenditures",NA,"2009",180613000
+"597","Debt Service - Principal Retirement","Expenditures",NA,"2008",193292000
+"598","Debt Service - Principal Retirement","Expenditures",NA,"2007",159862000
+"599","Debt Service - Principal Retirement","Expenditures",NA,"2006",152746000
+"600","Debt Service - Principal Retirement","Expenditures",NA,"2005",183911000
+"601","Employment and Family Services","Expenditures",NA,"2024",1251901000
+"602","Employment and Family Services","Expenditures",NA,"2023",1567466000
+"603","Employment and Family Services","Expenditures",NA,"2022",1385699000
+"604","Employment and Family Services","Expenditures",NA,"2021",1067848000
+"605","Employment and Family Services","Expenditures",NA,"2020",778046000
+"606","Employment and Family Services","Expenditures",NA,"2019",755613000
+"607","Employment and Family Services","Expenditures",NA,"2018",749620000
+"608","Employment and Family Services","Expenditures",NA,"2017",754530000
+"609","Employment and Family Services","Expenditures",NA,"2016",708184000
+"610","Employment and Family Services","Expenditures",NA,"2015",730972000
+"611","Employment and Family Services","Expenditures",NA,"2014",703441000
+"612","Employment and Family Services","Expenditures",NA,"2013",781178000
+"613","Employment and Family Services","Expenditures",NA,"2012",706181000
+"614","Employment and Family Services","Expenditures",NA,"2011",703786000
+"615","Employment and Family Services","Expenditures",NA,"2010",673329000
+"616","Employment and Family Services","Expenditures",NA,"2009",519741000
+"617","Employment and Family Services","Expenditures",NA,"2008",432955000
+"618","Employment and Family Services","Expenditures",NA,"2007",406532000
+"619","Employment and Family Services","Expenditures",NA,"2006",413380000
+"620","Employment and Family Services","Expenditures",NA,"2005",417037000
+"621","Environmental Quality","Expenditures",9,"2024",81980000
+"622","Environmental Quality","Expenditures",9,"2023",83608000
+"623","Environmental Quality","Expenditures",9,"2022",NA
+"624","Environmental Quality","Expenditures",9,"2021",NA
+"625","Environmental Quality","Expenditures",9,"2020",NA
+"626","Environmental Quality","Expenditures",9,"2019",NA
+"627","Environmental Quality","Expenditures",9,"2018",NA
+"628","Environmental Quality","Expenditures",9,"2017",NA
+"629","Environmental Quality","Expenditures",9,"2016",NA
+"630","Environmental Quality","Expenditures",9,"2015",NA
+"631","Environmental Quality","Expenditures",9,"2014",NA
+"632","Environmental Quality","Expenditures",9,"2013",NA
+"633","Environmental Quality","Expenditures",9,"2012",NA
+"634","Environmental Quality","Expenditures",9,"2011",NA
+"635","Environmental Quality","Expenditures",9,"2010",NA
+"636","Environmental Quality","Expenditures",9,"2009",NA
+"637","Environmental Quality","Expenditures",9,"2008",NA
+"638","Environmental Quality","Expenditures",9,"2007",NA
+"639","Environmental Quality","Expenditures",9,"2006",NA
+"640","Environmental Quality","Expenditures",9,"2005",NA
+"641","General Government","Expenditures",8,"2024",1244524000
+"642","General Government","Expenditures",8,"2023",1205448000
+"643","General Government","Expenditures",8,"2022",1109712000
+"644","General Government","Expenditures",8,"2021",1204986000
+"645","General Government","Expenditures",8,"2020",608657000
+"646","General Government","Expenditures",8,"2019",492800000
+"647","General Government","Expenditures",8,"2018",460569000
+"648","General Government","Expenditures",8,"2017",409626000
+"649","General Government","Expenditures",8,"2016",412204000
+"650","General Government","Expenditures",8,"2015",386059000
+"651","General Government","Expenditures",8,"2014",374134000
+"652","General Government","Expenditures",8,"2013",362845000
+"653","General Government","Expenditures",8,"2012",356752000
+"654","General Government","Expenditures",8,"2011",316440000
+"655","General Government","Expenditures",8,"2010",313981000
+"656","General Government","Expenditures",8,"2009",325076000
+"657","General Government","Expenditures",8,"2008",319389000
+"658","General Government","Expenditures",8,"2007",268775000
+"659","General Government","Expenditures",8,"2006",239838000
+"660","General Government","Expenditures",8,"2005",178891000
+"661","Health and Environmental Quality","Expenditures",9,"2024",NA
+"662","Health and Environmental Quality","Expenditures",9,"2023",NA
+"663","Health and Environmental Quality","Expenditures",9,"2022",4771546000
+"664","Health and Environmental Quality","Expenditures",9,"2021",4048719000
+"665","Health and Environmental Quality","Expenditures",9,"2020",3427211000
+"666","Health and Environmental Quality","Expenditures",9,"2019",2997039000
+"667","Health and Environmental Quality","Expenditures",9,"2018",2823947000
+"668","Health and Environmental Quality","Expenditures",9,"2017",2733374000
+"669","Health and Environmental Quality","Expenditures",9,"2016",2622797000
+"670","Health and Environmental Quality","Expenditures",9,"2015",2517513000
+"671","Health and Environmental Quality","Expenditures",9,"2014",2434410000
+"672","Health and Environmental Quality","Expenditures",9,"2013",2252166000
+"673","Health and Environmental Quality","Expenditures",9,"2012",2141835000
+"674","Health and Environmental Quality","Expenditures",9,"2011",2008356000
+"675","Health and Environmental Quality","Expenditures",9,"2010",1873264000
+"676","Health and Environmental Quality","Expenditures",9,"2009",1812488000
+"677","Health and Environmental Quality","Expenditures",9,"2008",1648841000
+"678","Health and Environmental Quality","Expenditures",9,"2007",1620400000
+"679","Health and Environmental Quality","Expenditures",9,"2006",1634619000
+"680","Health and Environmental Quality","Expenditures",9,"2005",1461618000
+"681","Health and Human Services","Expenditures",9,"2024",6700697000
+"682","Health and Human Services","Expenditures",9,"2023",6158813000
+"683","Health and Human Services","Expenditures",9,"2022",NA
+"684","Health and Human Services","Expenditures",9,"2021",NA
+"685","Health and Human Services","Expenditures",9,"2020",NA
+"686","Health and Human Services","Expenditures",9,"2019",NA
+"687","Health and Human Services","Expenditures",9,"2018",NA
+"688","Health and Human Services","Expenditures",9,"2017",NA
+"689","Health and Human Services","Expenditures",9,"2016",NA
+"690","Health and Human Services","Expenditures",9,"2015",NA
+"691","Health and Human Services","Expenditures",9,"2014",NA
+"692","Health and Human Services","Expenditures",9,"2013",NA
+"693","Health and Human Services","Expenditures",9,"2012",NA
+"694","Health and Human Services","Expenditures",9,"2011",NA
+"695","Health and Human Services","Expenditures",9,"2010",NA
+"696","Health and Human Services","Expenditures",9,"2009",NA
+"697","Health and Human Services","Expenditures",9,"2008",NA
+"698","Health and Human Services","Expenditures",9,"2007",NA
+"699","Health and Human Services","Expenditures",9,"2006",NA
+"700","Health and Human Services","Expenditures",9,"2005",NA
+"701","Higher Education-Colleges and Universities","Expenditures",NA,"2024",1823061000
+"702","Higher Education-Colleges and Universities","Expenditures",NA,"2023",1522765000
+"703","Higher Education-Colleges and Universities","Expenditures",NA,"2022",1324098000
+"704","Higher Education-Colleges and Universities","Expenditures",NA,"2021",1271944000
+"705","Higher Education-Colleges and Universities","Expenditures",NA,"2020",1109447000
+"706","Higher Education-Colleges and Universities","Expenditures",NA,"2019",1102310000
+"707","Higher Education-Colleges and Universities","Expenditures",NA,"2018",1018286000
+"708","Higher Education-Colleges and Universities","Expenditures",NA,"2017",981938000
+"709","Higher Education-Colleges and Universities","Expenditures",NA,"2016",915432000
+"710","Higher Education-Colleges and Universities","Expenditures",NA,"2015",875610000
+"711","Higher Education-Colleges and Universities","Expenditures",NA,"2014",781998000
+"712","Higher Education-Colleges and Universities","Expenditures",NA,"2013",735438000
+"713","Higher Education-Colleges and Universities","Expenditures",NA,"2012",721074000
+"714","Higher Education-Colleges and Universities","Expenditures",NA,"2011",718026000
+"715","Higher Education-Colleges and Universities","Expenditures",NA,"2010",734440000
+"716","Higher Education-Colleges and Universities","Expenditures",NA,"2009",782650000
+"717","Higher Education-Colleges and Universities","Expenditures",NA,"2008",793283000
+"718","Higher Education-Colleges and Universities","Expenditures",NA,"2007",708063000
+"719","Higher Education-Colleges and Universities","Expenditures",NA,"2006",675267000
+"720","Higher Education-Colleges and Universities","Expenditures",NA,"2005",637087000
+"721","Higher Education-State Administration","Expenditures",10,"2024",148389000
+"722","Higher Education-State Administration","Expenditures",10,"2023",133320000
+"723","Higher Education-State Administration","Expenditures",10,"2022",114235000
+"724","Higher Education-State Administration","Expenditures",10,"2021",182070000
+"725","Higher Education-State Administration","Expenditures",10,"2020",125335000
+"726","Higher Education-State Administration","Expenditures",10,"2019",96323000
+"727","Higher Education-State Administration","Expenditures",10,"2018",78773000
+"728","Higher Education-State Administration","Expenditures",10,"2017",73641000
+"729","Higher Education-State Administration","Expenditures",10,"2016",79567000
+"730","Higher Education-State Administration","Expenditures",10,"2015",56935000
+"731","Higher Education-State Administration","Expenditures",10,"2014",48920000
+"732","Higher Education-State Administration","Expenditures",10,"2013",51901000
+"733","Higher Education-State Administration","Expenditures",10,"2012",49359000
+"734","Higher Education-State Administration","Expenditures",10,"2011",48836000
+"735","Higher Education-State Administration","Expenditures",10,"2010",52084000
+"736","Higher Education-State Administration","Expenditures",10,"2009",60224000
+"737","Higher Education-State Administration","Expenditures",10,"2008",64587000
+"738","Higher Education-State Administration","Expenditures",10,"2007",49064000
+"739","Higher Education-State Administration","Expenditures",10,"2006",43505000
+"740","Higher Education-State Administration","Expenditures",10,"2005",39121000
+"741","Human Services and Juvenile Justice Services","Expenditures",9,"2024",NA
+"742","Human Services and Juvenile Justice Services","Expenditures",9,"2023",NA
+"743","Human Services and Juvenile Justice Services","Expenditures",9,"2022",1107034000
+"744","Human Services and Juvenile Justice Services","Expenditures",9,"2021",1023128000
+"745","Human Services and Juvenile Justice Services","Expenditures",9,"2020",984607000
+"746","Human Services and Juvenile Justice Services","Expenditures",9,"2019",919227000
+"747","Human Services and Juvenile Justice Services","Expenditures",9,"2018",858099000
+"748","Human Services and Juvenile Justice Services","Expenditures",9,"2017",804283000
+"749","Human Services and Juvenile Justice Services","Expenditures",9,"2016",766186000
+"750","Human Services and Juvenile Justice Services","Expenditures",9,"2015",723663000
+"751","Human Services and Juvenile Justice Services","Expenditures",9,"2014",692277000
+"752","Human Services and Juvenile Justice Services","Expenditures",9,"2013",669091000
+"753","Human Services and Juvenile Justice Services","Expenditures",9,"2012",645418000
+"754","Human Services and Juvenile Justice Services","Expenditures",9,"2011",646411000
+"755","Human Services and Juvenile Justice Services","Expenditures",9,"2010",667192000
+"756","Human Services and Juvenile Justice Services","Expenditures",9,"2009",701099000
+"757","Human Services and Juvenile Justice Services","Expenditures",9,"2008",677234000
+"758","Human Services and Juvenile Justice Services","Expenditures",9,"2007",627598000
+"759","Human Services and Juvenile Justice Services","Expenditures",9,"2006",593392000
+"760","Human Services and Juvenile Justice Services","Expenditures",9,"2005",576871000
+"761","Natural Resources","Expenditures",11,"2024",530598000
+"762","Natural Resources","Expenditures",11,"2023",398983000
+"763","Natural Resources","Expenditures",11,"2022",297321000
+"764","Natural Resources","Expenditures",11,"2021",274500000
+"765","Natural Resources","Expenditures",11,"2020",272994000
+"766","Natural Resources","Expenditures",11,"2019",251545000
+"767","Natural Resources","Expenditures",11,"2018",231665000
+"768","Natural Resources","Expenditures",11,"2017",225387000
+"769","Natural Resources","Expenditures",11,"2016",196188000
+"770","Natural Resources","Expenditures",11,"2015",190378000
+"771","Natural Resources","Expenditures",11,"2014",184465000
+"772","Natural Resources","Expenditures",11,"2013",178330000
+"773","Natural Resources","Expenditures",11,"2012",153698000
+"774","Natural Resources","Expenditures",11,"2011",189430000
+"775","Natural Resources","Expenditures",11,"2010",161640000
+"776","Natural Resources","Expenditures",11,"2009",178306000
+"777","Natural Resources","Expenditures",11,"2008",174120000
+"778","Natural Resources","Expenditures",11,"2007",171014000
+"779","Natural Resources","Expenditures",11,"2006",140592000
+"780","Natural Resources","Expenditures",11,"2005",123195000
+"781","Public Education","Expenditures",13,"2024",6118349000
+"782","Public Education","Expenditures",13,"2023",5577981000
+"783","Public Education","Expenditures",13,"2022",5249375000
+"784","Public Education","Expenditures",13,"2021",4829615000
+"785","Public Education","Expenditures",13,"2020",4409279000
+"786","Public Education","Expenditures",13,"2019",4140263000
+"787","Public Education","Expenditures",13,"2018",3983098000
+"788","Public Education","Expenditures",13,"2017",3732813000
+"789","Public Education","Expenditures",13,"2016",3556897000
+"790","Public Education","Expenditures",13,"2015",3340290000
+"791","Public Education","Expenditures",13,"2014",3202007000
+"792","Public Education","Expenditures",13,"2013",3097161000
+"793","Public Education","Expenditures",13,"2012",2999706000
+"794","Public Education","Expenditures",13,"2011",3059351000
+"795","Public Education","Expenditures",13,"2010",3002318000
+"796","Public Education","Expenditures",13,"2009",3035519000
+"797","Public Education","Expenditures",13,"2008",2960873000
+"798","Public Education","Expenditures",13,"2007",2547421000
+"799","Public Education","Expenditures",13,"2006",2322871000
+"800","Public Education","Expenditures",13,"2005",2168896000
+"801","Public Safety","Expenditures",NA,"2024",527380000
+"802","Public Safety","Expenditures",NA,"2023",516054000
+"803","Public Safety","Expenditures",NA,"2022",458918000
+"804","Public Safety","Expenditures",NA,"2021",363518000
+"805","Public Safety","Expenditures",NA,"2020",341668000
+"806","Public Safety","Expenditures",NA,"2019",340210000
+"807","Public Safety","Expenditures",NA,"2018",294693000
+"808","Public Safety","Expenditures",NA,"2017",253976000
+"809","Public Safety","Expenditures",NA,"2016",263417000
+"810","Public Safety","Expenditures",NA,"2015",266586000
+"811","Public Safety","Expenditures",NA,"2014",271716000
+"812","Public Safety","Expenditures",NA,"2013",255727000
+"813","Public Safety","Expenditures",NA,"2012",239453000
+"814","Public Safety","Expenditures",NA,"2011",207426000
+"815","Public Safety","Expenditures",NA,"2010",199731000
+"816","Public Safety","Expenditures",NA,"2009",213038000
+"817","Public Safety","Expenditures",NA,"2008",196008000
+"818","Public Safety","Expenditures",NA,"2007",172427000
+"819","Public Safety","Expenditures",NA,"2006",179622000
+"820","Public Safety","Expenditures",NA,"2005",163072000
+"821","Total Expenditures","Expenditures",NA,"2024",22596317000
+"822","Total Expenditures","Expenditures",NA,"2023",20651817000
+"823","Total Expenditures","Expenditures",NA,"2022",19281966000
+"824","Total Expenditures","Expenditures",NA,"2021",18029017000
+"825","Total Expenditures","Expenditures",NA,"2020",15659248000
+"826","Total Expenditures","Expenditures",NA,"2019",13949392000
+"827","Total Expenditures","Expenditures",NA,"2018",13331567000
+"828","Total Expenditures","Expenditures",NA,"2017",12656478000
+"829","Total Expenditures","Expenditures",NA,"2016",11923040000
+"830","Total Expenditures","Expenditures",NA,"2015",11482470000
+"831","Total Expenditures","Expenditures",NA,"2014",10986124000
+"832","Total Expenditures","Expenditures",NA,"2013",10826503000
+"833","Total Expenditures","Expenditures",NA,"2012",11113637000
+"834","Total Expenditures","Expenditures",NA,"2011",11067579000
+"835","Total Expenditures","Expenditures",NA,"2010",10839691000
+"836","Total Expenditures","Expenditures",NA,"2009",10357295000
+"837","Total Expenditures","Expenditures",NA,"2008",9809175000
+"838","Total Expenditures","Expenditures",NA,"2007",8728330000
+"839","Total Expenditures","Expenditures",NA,"2006",8081221000
+"840","Total Expenditures","Expenditures",NA,"2005",7455397000
+"841","Transportation","Expenditures",14,"2024",1420977000
+"842","Transportation","Expenditures",14,"2023",1238165000
+"843","Transportation","Expenditures",14,"2022",1131668000
+"844","Transportation","Expenditures",14,"2021",1206786000
+"845","Transportation","Expenditures",14,"2020",1166194000
+"846","Transportation","Expenditures",14,"2019",996728000
+"847","Transportation","Expenditures",14,"2018",1024576000
+"848","Transportation","Expenditures",14,"2017",975662000
+"849","Transportation","Expenditures",14,"2016",835111000
+"850","Transportation","Expenditures",14,"2015",903700000
+"851","Transportation","Expenditures",14,"2014",902788000
+"852","Transportation","Expenditures",14,"2013",951277000
+"853","Transportation","Expenditures",14,"2012",1064449000
+"854","Transportation","Expenditures",14,"2011",946692000
+"855","Transportation","Expenditures",14,"2010",1204955000
+"856","Transportation","Expenditures",14,"2009",1249080000
+"857","Transportation","Expenditures",14,"2008",1030793000
+"858","Transportation","Expenditures",14,"2007",813315000
+"859","Transportation","Expenditures",14,"2006",761744000
+"860","Transportation","Expenditures",14,"2005",797869000
+"861","Heritage and Arts","Expenditure",NA,"2024",NA
+"862","Heritage and Arts","Expenditure",NA,"2023",NA
+"863","Heritage and Arts","Expenditure",NA,"2022",NA
+"864","Heritage and Arts","Expenditure",NA,"2021",NA
+"865","Heritage and Arts","Expenditure",NA,"2020",NA
+"866","Heritage and Arts","Expenditure",NA,"2019",NA
+"867","Heritage and Arts","Expenditure",NA,"2018",NA
+"868","Heritage and Arts","Expenditure",NA,"2017",NA
+"869","Heritage and Arts","Expenditure",NA,"2016",NA
+"870","Heritage and Arts","Expenditure",NA,"2015",NA
+"871","Heritage and Arts","Expenditure",NA,"2014",24231000
+"872","Heritage and Arts","Expenditure",NA,"2013",22428000
+"873","Heritage and Arts","Expenditure",NA,"2012",155575000
+"874","Heritage and Arts","Expenditure",NA,"2011",160338000
+"875","Heritage and Arts","Expenditure",NA,"2010",178258000
+"876","Heritage and Arts","Expenditure",NA,"2009",140453000
+"877","Heritage and Arts","Expenditure",NA,"2008",132413000
+"878","Heritage and Arts","Expenditure",NA,"2007",108592000
+"879","Heritage and Arts","Expenditure",NA,"2006",85231000
+"880","Heritage and Arts","Expenditure",NA,"2005",87621000
