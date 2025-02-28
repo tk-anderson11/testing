@@ -1,0 +1,128 @@
+---
+title: "addition data scrapping"
+format: html
+editor: visual
+---
+
+## Scrapping 2014 to 2004
+
+```{r}
+## Load old data
+
+A4_2024_2020 <- read_delim("C:/Users/tkanderson/Documents/testing/ACRF - Rev vs Exp/A-4 data 2024-2020.txt", show_col_types = FALSE)
+
+A4_2019_2015 <- read_delim("C:/Users/tkanderson/Documents/testing/ACRF - Rev vs Exp/A-4 data 2019-2015.txt", show_col_types = FALSE)
+
+
+## Insert extra 10 years
+A4_2014_2005 <- read_delim("C:/Users/tkanderson/Documents/testing/ACRF - Rev vs Exp/cleanedup-A4-2014-2005.txt",
+                           delim = "\t")
+
+print(colnames(A4_2024_2020))  # Print the column names
+print(colnames(A4_2019_2015))
+print(colnames(A4_2014_2005))
+```
+
+## Merging 20 years
+
+```{r}
+#Combine the data - Append all years together
+
+# Extract the 5-year columns from A4_2019_2015
+cols_to_extract1 <- c("2019", "2018", "2017", "2016", "2015")
+
+A4_2019_2015_subset <- A4_2019_2015[, cols_to_extract1]
+
+joint_data <- cbind(A4_2024_2020, A4_2019_2015_subset) %>% 
+  filter(type != "Special Item" & type != "NA")  ## remove Special Item
+  
+
+# Extract the 10-years of columns from A4_2014_2005
+cols_to_extract2 <- c("line_item", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005")
+
+A4_2014_2005_subset <- A4_2014_2005[, cols_to_extract2]
+
+
+
+joint_20yrs_data <- merge(joint_data, A4_2014_2005_subset, by = "line_item", all.x = TRUE, all.y = TRUE) %>% 
+   mutate(type = ifelse(line_item == "Heritage and Arts", "Expenditure", type)) %>%
+   filter(!is.na(type)) %>% 
+   arrange(desc(type))
+```
+
+```{r}
+# Pivot the data
+
+# convert to thousands x1000 -- PDF is dollars expressed in thousands
+
+cols_to_change <- c("2024", "2023", "2022", "2021", "2020","2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005")
+
+# Loop through the columns and apply the changes
+for (col in cols_to_change) {
+  # Check if the column exists in the data frame before trying to change it
+  if (col %in% names(joint_20yrs_data)) {
+
+    # Convert the column to numeric.  Then multiply by 1,000
+    joint_20yrs_data[[col]] <- as.numeric(joint_20yrs_data[[col]])
+    joint_20yrs_data[[col]] <- joint_20yrs_data[[col]] * 1000
+  }
+}
+
+joint_data_long <- joint_20yrs_data %>%
+  pivot_longer(
+    cols = c("2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005"),
+    names_to = "year",
+    values_to = "amount")
+```
+
+```{r}
+# Assuming your dataframe is called joint_data_long
+
+# Specify the file path
+file_path <- "C:/Users/tkanderson/Documents/joint_data_long.csv"
+
+# Export the dataframe to a CSV file
+write.csv(joint_data_long, file = file_path)
+```
+
+## EDA
+
+```{r}
+## Verify totals add up correctly
+
+# Revenues
+joint_data_long %>% filter(line_item == "Total Revenues") %>%
+  summarize(total_10 = sum(amount))
+
+joint_data_long %>% filter(type == "Revenues") %>% 
+  filter(!line_item == "Total Revenues") %>% 
+  summarize(total = sum(amount, na.rm = TRUE))
+
+# Looking at Exp
+joint_data_long %>%
+  filter(line_item == "Total Expenditures") %>%
+  summarize(total_10 = sum(amount))
+
+joint_data_long %>% 
+  filter(type == "Expenditures") %>% 
+  filter(!line_item == "Total Expenditures") %>% 
+  summarize(total = sum(amount, na.rm = TRUE))
+```
+
+```{r}
+# Filter for only revenue data
+revenue_data <- joint_data_long %>%  filter(type == "Revenues")
+
+total_rev <- revenue_data %>% filter(line_item == "Total Revenues")
+
+
+plot2 <- ggplot(total_rev, aes(x = year, y = amount)) +
+  geom_line(aes(group = 1), color = "black") +
+  geom_point(color = "black") +
+  labs(title = "Total Revenue Over the Last 10 Years",
+       x = "Year",
+       y = "Billions of $") +
+  theme_minimal() +
+  scale_y_continuous(labels = function(x) x/1e9)
+ggplotly(plot2)
+```

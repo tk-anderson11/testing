@@ -1,0 +1,165 @@
+---
+title: "Title-IV Research"
+output: html_document
+date: "2025-02-10"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+library(scales)
+
+# Future workflow to query directly!!
+library(bigrquery)
+library(DBI)
+```
+
+``` {r}
+bq_auth()
+
+project_name <- 'ut-sao-transparency-prod'
+
+con <- dbConnect(
+  bigrquery::bigquery(),
+  project = project_name,
+  dataset = "transaction",
+  billing = project_name
+)
+```
+
+```{r }
+query_str <- paste0("SELECT fiscal_year, entity_name, fund1, fund2, fund3, org1, org2, org3, org4, org5, cat1, cat2, cat3, cat4, cat5, cat6, cat7, function1, function2, function3, type, vendor_name, amount, posting_date
+FROM `ut-sao-transparency-prod.transaction.transaction`
+WHERE entity_name = 'State of Utah' AND LOWER(cat6) LIKE '%title iv-e%'")
+
+data <- dbGetQuery(con, query_str)
+```
+
+```{r}
+# initial_data <- read.csv("~/testing/data/title-IVE-inital.csv")
+
+## matches download directly from BigQuery
+```
+
+```{r}
+initial_data <- data
+data %>% pull(cat6) %>% unique()
+
+dataplot <- data %>% 
+  group_by(fiscal_year, cat6) %>% 
+  summarise(total = sum(amount))
+
+#library(data.table) ## install this!!
+#datatable(dataplot)
+```
+
+## EDA
+```{r}
+unique(initial_data$org1)
+unique(initial_data$org2)
+unique(initial_data$org3)
+unique(initial_data$fiscal_year)
+
+# Group by org2 and sum the amount for each group
+grouped_org2 <- initial_data %>%
+  group_by(org2) %>%
+  summarize(total_amount = sum(amount))
+head(grouped_org2)
+
+# Group by org3 and sum the amount for each group
+grouped_org3 <- initial_data %>%
+  group_by(org3) %>%
+  summarize(total_amount = sum(amount))
+head(grouped_org3)
+
+# Group by org4 and sum the amount for each group
+grouped_org4 <- initial_data %>%
+  group_by(org4) %>%
+  summarize(total_amount = sum(amount))
+head(grouped_org4)
+
+# Children & Family Services Clearing Account only shows up in 2023
+```
+
+```{r}
+# Group by org3 and sum the amount for each group
+grouped_org3 <- initial_data %>%
+  group_by(org3, fiscal_year) %>%
+  summarize(total_amount = sum(amount))
+head(grouped_org3)
+
+org3_plot <- ggplot(grouped_org3, aes(x = fiscal_year, y = total_amount, color = org3)) +
+  geom_line() +
+  geom_point() + # Add points for clarity
+  labs(title = "Total Amount by Fiscal Year & Org3",
+       x = "Fiscal Year",
+       y = "",
+       color = "Organization (Org3)") +
+  theme_minimal() +
+  theme(legend.position = "right")+
+  scale_y_continuous(labels = dollar)
+
+ggplotly(org3_plot)
+```
+
+## Graph of Revenues overtime
+```{r pressure}
+library(plotly)
+
+plot2 <- ggplot(data = dataplot, aes(x = fiscal_year, y = total, fill = cat6))+
+  geom_bar(stat = "identity", position = "dodge") +  # Use geom_bar with stat = "identity" for pre-calculated values and position dodge
+  labs(title = "Revenue Over Time by Category",
+       x = "",
+       y = "Total Revenue",
+       fill = "Category") +
+  theme_minimal()+ 
+  scale_y_continuous(labels = dollar_format(scale = 1e-6, suffix = "M"))
+
+ggplotly(plot2)
+```
+
+```{r}
+plot3 <- ggplot(data = dataplot, aes(x = fiscal_year, y = total, fill = cat6)) +
+  geom_bar(stat = "identity", position = "stack") +  # Use position = "stack" to create stacked bars
+  labs(title = "Spending Over Time by Category",
+       x = "Fiscal Year",
+       y = "Amounts (M$)",
+       fill = "Spending Category") +
+  theme_minimal() +
+  scale_y_continuous(labels = dollar_format(scale = 1e-6, suffix = "M")) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggplotly(plot3)
+```
+
+```{r}
+plot4 <- ggplot(data = dataplot, aes(x = fiscal_year, y = total, color = cat6, group = cat6)) +  #Added group = cat6 to connect lines
+  geom_line(linewidth = 1) +  # Changed geom_bar to geom_line
+  geom_point(size = 2) + #Optional: Add points to the line
+  labs(title = "Revenue Over Time",
+       x = "Fiscal Year",  # More descriptive x-axis label
+       y = "",
+       color = "Category") + #Corrected label name for clarity
+  theme_minimal() +
+  scale_y_continuous(labels = dollar_format(scale = 1e-6, suffix = "M"))
+print(plot4)
+
+ggplotly(plot4)
+```
+
+
+```{r}
+# next step: pull all data on federal grants (in cat3 or cat5) to see what % title-IV is of total federal grant money
+
+query_str2 <- "SELECT fiscal_year, entity_name, fund1, fund2, fund3, org1, org2, org3, org4, org5, cat1, cat2, cat3, cat4, cat5, cat6, cat7, function1, function2, function3, type, vendor_name, amount, posting_date
+FROM `ut-sao-transparency-prod.transaction.transaction`
+WHERE entity_name = 'State of Utah' AND LOWER(cat3) LIKE '%federal grants%'"
+
+#data_federal <- dbGetQuery(con, query_str2)
+
+# also could combine revenue flows at org3 level to show growth/decreases
+# dig further into each org level? look at different org structures?
+# can we track the expense side of Title IV-E? Probably not?
+```
